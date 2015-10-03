@@ -1,0 +1,17 @@
+<!-- <h2>Craft by Keren</h2> -->
+<div class ='jumbotron'>
+	<div class = 'container'>	
+		<div class = 'listItem' ng-repeat='group in products' ng-init="productGroup=group" >
+			<div class ='row' >
+				<div ng-repeat='product in productGroup'>
+					<div class ='col-md-4'>
+						<div class ="thumbnail">
+							<img ng-src="{{product.url}}">
+						</div>
+						<p>{{product.title}} </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
